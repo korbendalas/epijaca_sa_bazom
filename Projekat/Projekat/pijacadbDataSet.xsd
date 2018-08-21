@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="pijacadbDataSet" targetNamespace="http://tempuri.org/pijacadbDataSet.xsd" xmlns:mstns="http://tempuri.org/pijacadbDataSet.xsd" xmlns="http://tempuri.org/pijacadbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="pijacadbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="pijacadbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Projekat.Properties.Settings.GlobalReference.Default.pijacadbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="pijacadbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="pijacadbDataSet" msprop:Generator_UserDSName="pijacadbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="racunTable" msprop:Generator_TableClassName="racunTableDataTable" msprop:Generator_TableVarName="tableracunTable" msprop:Generator_RowChangedName="racunTableRowChanged" msprop:Generator_TablePropName="racunTable" msprop:Generator_RowDeletingName="racunTableRowDeleting" msprop:Generator_RowChangingName="racunTableRowChanging" msprop:Generator_RowEvHandlerName="racunTableRowChangeEventHandler" msprop:Generator_RowDeletedName="racunTableRowDeleted" msprop:Generator_RowClassName="racunTableRow" msprop:Generator_UserTableName="racunTable" msprop:Generator_RowEvArgName="racunTableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="ime" msprop:Generator_ColumnVarNameInTable="columnime" msprop:Generator_ColumnPropNameInRow="ime" msprop:Generator_ColumnPropNameInTable="imeColumn" msprop:Generator_UserColumnName="ime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prezime" msprop:Generator_ColumnVarNameInTable="columnprezime" msprop:Generator_ColumnPropNameInRow="prezime" msprop:Generator_ColumnPropNameInTable="prezimeColumn" msprop:Generator_UserColumnName="prezime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="adresa" msprop:Generator_ColumnVarNameInTable="columnadresa" msprop:Generator_ColumnPropNameInRow="adresa" msprop:Generator_ColumnPropNameInTable="adresaColumn" msprop:Generator_UserColumnName="adresa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dostavljac" msprop:Generator_ColumnVarNameInTable="columndostavljac" msprop:Generator_ColumnPropNameInRow="dostavljac" msprop:Generator_ColumnPropNameInTable="dostavljacColumn" msprop:Generator_UserColumnName="dostavljac">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="artikli" msprop:Generator_ColumnVarNameInTable="columnartikli" msprop:Generator_ColumnPropNameInRow="artikli" msprop:Generator_ColumnPropNameInTable="artikliColumn" msprop:Generator_UserColumnName="artikli">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cena" msprop:Generator_ColumnVarNameInTable="columncena" msprop:Generator_ColumnPropNameInRow="cena" msprop:Generator_ColumnPropNameInTable="cenaColumn" msprop:Generator_UserColumnName="cena" type="xs:int" />
+              <xs:element name="datum" msprop:Generator_ColumnVarNameInTable="columndatum" msprop:Generator_ColumnPropNameInRow="datum" msprop:Generator_ColumnPropNameInTable="datumColumn" msprop:Generator_UserColumnName="datum">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:racunTable" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
